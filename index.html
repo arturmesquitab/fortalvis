@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+        <meta name="viewport" content="width=device-width">
+        <title>FortalVis</title> 
+        <!-- Inclusões das bibliotecas JavaScript para o Highcharts--> 
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+		<link rel="stylesheet" type="text/css" href="css/head_bar.css">  
+    </head> 
+    <body> 
+        <script>
+            $.get("head_bar.html", function(data){
+                $("#menu").replaceWith(data);
+            });
+        </script>
+        <div id="menu"></div>
+    </body>
+</html>
