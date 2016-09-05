@@ -13,7 +13,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #999;
 }
 li {
     float: left;
@@ -28,10 +28,10 @@ li a,.h_menu {
     text-indent: 0px;
 }
 li .h_menu {
-    background-color: #333;
+    background-color: #777;
 }
 li a:hover,.h_menu:hover,.dropdown:hover {
-    background-color: #000000;
+    background-color: #555;
 }
 li.dropdown {
     display: inline-block;
@@ -52,7 +52,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #777}
+.dropdown-content a:hover {background-color: #555}
 
 .dropdown:hover .dropdown-content {
     display: block;
