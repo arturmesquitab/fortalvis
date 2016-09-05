@@ -8,20 +8,18 @@ body{
     left: 0;
     z-index: 1000;
 }
-#menu ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
-#menu li {
+li {
     float: left;
-    /*border-right: 1px solid #bbb;*/
-    align: center;
 }
-#menu li a {
-    display: block;
+li a,.h_menu {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 10px 20px;  
@@ -29,49 +27,33 @@ body{
     font-size: 18px;
     text-indent: 0px;
 }
-#menu li .home {
-    background-color: #238b45;
+li .h_menu {
+    background-color: #333;
 }
-#menu li .home:hover {
-    background-color: #41ae76;
+li a:hover,.h_menu:hover,.dropdown:hover {
+    background-color: #000000;
 }
-#menu li .OCI {
-    background-color: #0868ac;
+li.dropdown {
+    display: inline-block;
 }
-#menu li .OCI:hover {
-    background-color: #2b8cbe;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-#menu li .inscritos {
-    background-color: #ff7f00;
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
-#menu li .inscritos:hover {
-    background-color: #ffaf0a;
-}
-#menu li .fase1 {
-    background-color: #993300;
-}
-#menu li .fase1:hover {
-    background-color: #b33c00;
-}
-#menu li .maratona {
-    background-color: #cca300;
-}
-#menu li .maratona:hover {
-    background-color: #e0b70d;
-}
-#menu li .conclusao {
-    background-color: #adad85;
-}
-#menu li .conclusao:hover {
-    background-color: #b8b894;
-}
-#menu li .about {
-    background-color: #E31A1C;
-}
-#menu li .about:hover {
-    background-color: #FC4E2A;
-}
-#head_logo{
-    position: relative;
-    padding-top: 80px;
+
+.dropdown-content a:hover {background-color: #777}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
